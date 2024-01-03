@@ -11,8 +11,8 @@ const cron = require('node-cron');
 const reminder = require('./src/utils/reminder');
 
 const app = express();
-app.use(credentials);
-app.use(cors(corsOptions));
+// app.use(credentials);
+// app.use(cors(corsOptions));
 
 // reminder
 // cron.schedule('* * * * *', reminder); // run in every minute

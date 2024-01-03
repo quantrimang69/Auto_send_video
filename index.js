@@ -46,13 +46,13 @@ app.use("*", (req, res) => {
   });
 });
 // config PORT
-const PORT_BE_CONFIG = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
-app.listen(PORT_BE_CONFIG, (err) => {
+app.listen(port, (err) => {
   if (err) {
     console.log(err);
   }
-  console.log(`🚀 Server is listening at port http://localhost:${PORT_BE_CONFIG}`);
+  console.log(`🚀 Server is listening at port http://localhost:${port}`);
 });
 
 module.exports = app;

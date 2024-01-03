@@ -3,7 +3,7 @@ const fs = require('fs');
 const { parse } = require("csv-parse");
 require('dotenv').config();
 const helperFn = require('../utils/helperFn');
-const RESPONSE = require('../constants/constants');
+const {RESPONSE} = require('../constants/constants');
 const {
   crawPageViet69, crawPageSexDiary
 } = require('../utils/crawlPage');

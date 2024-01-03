@@ -46,7 +46,7 @@ app.use("*", (req, res) => {
   });
 });
 // config PORT
-const PORT_BE_CONFIG = process.env.PORT_BE;
+const PORT_BE_CONFIG = process.env.PORT_BE || 3000;
 
 app.listen(PORT_BE_CONFIG, (err) => {
   if (err) {

@@ -9,7 +9,9 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const cron = require('node-cron');
 const reminder = require('./src/utils/reminder');
+const connectDB = require('./src/config/configDB');
 
+connectDB();
 const app = express();
 // app.use(credentials);
 // app.use(cors(corsOptions));

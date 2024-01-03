@@ -143,12 +143,12 @@ const updateNewVideo = async (req) => {
     const difference = findDifferences(newData, existingData)
     // If there are differences, send an email and write the new data to the CSV file
     if (difference.length > 0) {
-      // helperFn.sendEmail(difference);
+      helperFn.sendEmail(difference);
       writeNewVideo(difference);
       deleteOldVideos();
       return RESPONSE.SEND_EMAIL_SUCCESSFULLY;
     }else {
-      // helperFn.sendEmail('No new video');
+      helperFn.sendEmail('No new video');
       deleteOldVideos();
       return RESPONSE.SEND_EMAIL_SUCCESSFULLY;
     }
